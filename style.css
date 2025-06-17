@@ -1,143 +1,166 @@
-/* Variáveis */
-:root {
-    --primary-color: #026773;
-    --secondary-color: #3CA6A6;
-    --text-color: #024959;
-    --background-color: #F2E3D5;
-    --button-hover: #012E40;
-    --font-body: "Chocolate Classical Sans", serif;
-    --font-titulo: "Rakkas", serif;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrando a Conexão Urbano-Rural</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos adicionais para enfatizar a dualidade cidade/campo */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(to right, #4b6cb7, #182848);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1rem 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .conteudo {
+            padding: 2rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+        #problemas {
+            background-color: #f8f9fa;
+            border-left: 5px solid #dc3545;
+        }
+        #consequencias {
+            background-color: #f8f9fa;
+            border-left: 5px solid #ffc107;
+        }
+        #solucoes {
+            background-color: #f8f9fa;
+            border-left: 5px solid #28a745;
+        }
+        .cta-button {
+            background-color: #4b6cb7;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        .cta-button:hover {
+            background-color: #3a56a1;
+            transform: translateY(-2px);
+        }
+        footer {
+            background: linear-gradient(to right, #182848, #4b6cb7);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .cta-footer {
+            color: #ffc107;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Celebrando a Conexão Urbano-Rural</h1>
+        <img src="cidade-campo.jpg" alt="Contraste harmonioso entre a cidade moderna e o campo tradicional">
+        <p>Uma relação simbiótica que alimenta, inspira e sustenta nossa sociedade</p>
+        <nav>
+            <ul style="display: flex; justify-content: center; gap: 1.5rem; list-style: none; padding: 0;">
+                <li><a href="#problemas" style="color: white; text-decoration: none;">Desafios</a></li>
+                <li><a href="#beneficios" style="color: white; text-decoration: none;">Benefícios</a></li>
+                <li><a href="#futuro" style="color: white; text-decoration: none;">Futuro</a></li>
+            </ul>
+        </nav>
+    </header>
 
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-body);
-}
+    <main>
+        <section id="problemas" class="conteudo">
+            <h2>Desafios na Integração Urbano-Rural</h2>
+            
+            <article style="background: white; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <h3>Assimetria de Desenvolvimento</h3>
+                <p>Enquanto as cidades concentram infraestrutura e serviços, muitas áreas rurais enfrentam deficiências em transporte, comunicação e acesso a tecnologias modernas.</p>
+            </article>
 
-/* Corpo da página */
-body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.6;
-}
+            <article style="background: white; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <h3>Êxodo Rural Intensificado</h3>
+                <p>Atraídos por melhores oportunidades, jovens deixam o campo, resultando em envelhecimento populacional rural e perda de mão-de-obra qualificada.</p>
+            </article>
+            
+            <article style="background: white; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <h3>Conflitos Culturais</h3>
+                <p>Diferenças de valores e ritmos de vida entre ambientes urbanos e rurais podem gerar desentendimentos e falta de compreensão mútua.</p>
+            </article>
+            
+            <article style="background: white; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <h3>Pressão sobre Recursos Naturais</h3>
+                <p>A demanda urbana por alimentos e matérias-primas pode levar a práticas rurais insustentáveis quando não há diálogo equilibrado.</p>
+            </article>
 
-h3 {
-    margin-top: 25px;
-}
+            <a href="https://youtu.be/integracao-urbano-rural" class="cta-button" target="_blank">Ver Documentário Completo 🎥</a>
+        </section>
 
-p {
-    margin-top: 20px;
-}
+        <section id="beneficios" class="conteudo">
+            <h2>Benefícios da Conexão Harmoniosa</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <h3>Segurança Alimentar</h3>
+                    <p>Cadeias curtas de produção aproximam agricultores dos consumidores urbanos, garantindo alimentos frescos e reduzindo desperdício.</p>
+                </div>
+                
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <h3>Turismo Rural</h3>
+                    <p>Urbanos buscam experiências autênticas no campo, gerando renda alternativa para comunidades rurais.</p>
+                </div>
+                
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <h3>Tecnologias Compartilhadas</h3>
+                    <p>Inovações urbanas aplicadas ao campo aumentam produtividade, enquanto saberes rurais inspiram soluções urbanas sustentáveis.</p>
+                </div>
+                
+                <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    <h3>Preservação Cultural</h3>
+                    <p>O diálogo entre tradição rural e modernidade urbana enriquece o patrimônio cultural nacional.</p>
+                </div>
+            </div>
+        </section>
 
-/* Cabeçalho */
-header {
-    background: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+        <section id="futuro" class="conteudo">
+            <h2>Construindo um Futuro Integrado</h2>
+            <p style="font-size: 1.1rem;">A conexão cidade-campo deve evoluir para uma parceria estratégica. Políticas de desenvolvimento territorial integrado, investimento em infraestrutura rural inteligente e programas de educação mútua podem transformar os desafios em oportunidades. A agricultura 4.0, as cidades inteligentes que valorizam a produção local e o resgate da identidade rural na cultura urbana são caminhos promissores. Festivais que celebram essa conexão, feiras de produtos locais nas cidades e programas de intercâmbio urbano-rural são exemplos práticos dessa integração. O futuro exige que repensemos essa relação não como uma dicotomia, mas como um continuum onde cada espaço contribui com suas melhores características para o bem comum.</p>
+            
+            <div style="margin-top: 2rem; background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <h3>Iniciativas Inspiradoras</h3>
+                <ul style="columns: 2; list-style-type: square;">
+                    <li>Feiras do produtor em centros urbanos</li>
+                    <li>Programas de agricultura urbana</li>
+                    <li>Roteiros turísticos rurais educativos</li>
+                    <li>Incubadoras de negócios rurais inovadores</li>
+                    <li>Projetos de arquitetura rural-urbana</li>
+                    <li>Festivais culturais intercambiáveis</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
-header h1 {
-    font-family: var(--font-titulo);
-    margin-bottom: 10px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 10px;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Seções principais */
-.conteudo {
-    background: white;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Listas */
-ul {
-    list-style-type: square;
-    margin: 10px 0;
-    padding-left: 20px;
-}
-
-/* Botões */
-.cta-button {
-    display: block;
-    width: 200px;
-    margin: 20px auto;
-    padding: 10px;
-    background: var(--secondary-color);
-    color: var(--text-color);
-    text-align: center;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.cta-button:hover {
-    background: var(--button-hover);
-    color: white;
-}
-
-/* Rodapé */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: var(--primary-color);
-    color: white;
-}
-
-footer .cta-footer {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer .cta-footer:hover {
-    text-decoration: underline;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .conteudo {
-        width: 90%;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-
-    .cta-button {
-        width: 100%;
-    }
-}
+    <footer>
+        <a href="https://www.linkedin.com/company/urbano-rural" class="cta-footer">Participe deste Movimento!</a>
+        <p style="margin-top: 1rem;">© 2025 Conexão Urbano-Rural | Todos os direitos reservados</p>
+        <p style="font-size: 0.9rem; margin-top: 0.5rem;">"Do campo à cidade, uma só comunidade"</p>
+    </footer>
+</body>
+</html>
